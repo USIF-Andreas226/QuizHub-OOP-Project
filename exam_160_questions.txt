@@ -1,0 +1,3 @@
+32,What does int means,number,text,decimal,character,0,20
+602,what does print('Hello World') do,Hello World,Hello,23,null,0,10
+740,What does i += 5; does,adds 5 to i,make i = 5,subtract 5 from i,make i = 0,0,25

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineexamwithgui.Controllers.TopThreeStudentsController">
+   <ImageView fitHeight="700.0" fitWidth="700.0" pickOnBounds="true">
+      <Image url="@background1.jpg" />
+   </ImageView>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <Label layoutX="208.0" layoutY="50.0" text="Students' Performances" textFill="#2b63d4">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="234.0" fitWidth="378.0" layoutX="316.0" layoutY="167.0" pickOnBounds="true">
+         <Image url="@topThree.png" />
+      </ImageView>
+      <Label layoutX="14.0" layoutY="118.0" prefHeight="35.0" prefWidth="233.0" text="Top Three Students" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <FlowPane layoutX="21.0" layoutY="216.0" prefHeight="0.0" prefWidth="296.0">
+         <Label prefHeight="34.0" prefWidth="153.0" text="Student Name:" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="firstStudent" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="141.0" text="-" textFill="#3f7af5">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Label>
+      </FlowPane>
+      <FlowPane layoutX="21.0" layoutY="260.0" prefHeight="7.0" prefWidth="296.0">
+         <Label prefHeight="34.0" prefWidth="153.0" text="Student Score:" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="scoreFirstStudent" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="131.0" text="-" textFill="#3f7af5">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Label>
+      </FlowPane>
+      <Label alignment="CENTER" layoutX="65.0" layoutY="176.0" prefHeight="32.0" prefWidth="131.0" style="-fx-background-color: #e1c467; -fx-background-radius: 50px;" text="First Student" textFill="#3f7af5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="59.0" layoutY="311.0" prefHeight="32.0" prefWidth="142.0" style="-fx-background-color: #d3d3d5; -fx-background-radius: 50px;" text="Second Student" textFill="#3f7af5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <FlowPane layoutX="21.0" layoutY="343.0" prefHeight="7.0" prefWidth="296.0">
+         <Label prefHeight="34.0" prefWidth="153.0" text="Student Name:" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="secondStudent" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="131.0" text="-" textFill="#3f7af5">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Label>
+      </FlowPane>
+      <FlowPane layoutX="21.0" layoutY="384.0" prefHeight="7.0" prefWidth="296.0">
+         <Label prefHeight="34.0" prefWidth="153.0" text="Student Score:" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="scoreSecondStudent" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="131.0" text="-" textFill="#3f7af5">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Label>
+      </FlowPane>
+      <Label alignment="CENTER" layoutX="64.0" layoutY="439.0" prefHeight="32.0" prefWidth="131.0" style="-fx-background-color: #c1987e; -fx-background-radius: 50px;" text="Third Student" textFill="#3f7af5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <FlowPane layoutX="14.0" layoutY="526.0" prefHeight="7.0" prefWidth="296.0">
+         <Label prefHeight="34.0" prefWidth="153.0" text="Student Score:" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="scoreThirdStudent" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="131.0" text="-" textFill="#3f7af5">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Label>
+      </FlowPane>
+      <FlowPane layoutX="14.0" layoutY="479.0" prefHeight="7.0" prefWidth="296.0">
+         <Label prefHeight="33.0" prefWidth="148.0" text="Student Name:" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="thirdStudent" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="131.0" text="-" textFill="#3f7af5">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Label>
+      </FlowPane>
+      <Button layoutX="247.0" layoutY="595.0" mnemonicParsing="false" onAction="#onAdminOptions" prefHeight="42.0" prefWidth="220.0" style="-fx-background-color: #3f7af5; -fx-background-radius: 50px;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </AnchorPane>
+</StackPane>

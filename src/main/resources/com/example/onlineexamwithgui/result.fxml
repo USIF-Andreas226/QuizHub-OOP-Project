@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineexamwithgui.Controllers.ResultController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="700.0" pickOnBounds="true">
+         <image>
+            <Image url="@background1.jpg" />
+         </image></ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="285.0" layoutY="58.0" text="Your Result" textAlignment="CENTER" textFill="#2b63d4">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="image" fitHeight="289.0" fitWidth="443.0" layoutX="146.0" layoutY="267.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Success_Exam.png" />
+               </image>
+            </ImageView>
+            <FlowPane alignment="CENTER_LEFT" hgap="5.0" layoutX="54.0" layoutY="114.0" prefHeight="54.0" prefWidth="403.0">
+               <children>
+                  <Label text="Your Score Is:" textFill="#2b63d4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="score" text="80" textFill="#3f7af5">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </FlowPane>
+            <Label fx:id="message" alignment="CENTER" layoutX="159.0" layoutY="220.0" prefHeight="40.0" prefWidth="382.0" text="You Passed!" textFill="#2b63d4">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="232.0" layoutY="608.0" mnemonicParsing="false" onAction="#onStudentOption" prefHeight="30.0" prefWidth="235.0" style="-fx-background-color: #3f7af5; -fx-background-radius: 50px;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <FlowPane hgap="5.0" layoutX="54.0" layoutY="190.0">
+               <children>
+                  <Label text="Your Grade Is:" textFill="#2b63d4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="grade" text="A" textFill="#3f7af5">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </FlowPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

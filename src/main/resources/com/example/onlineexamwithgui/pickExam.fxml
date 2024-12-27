@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineexamwithgui.Controllers.PickExamController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="700.0" pickOnBounds="true">
+         <image>
+            <Image url="@background1.jpg" />
+         </image></ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ChoiceBox fx:id="examChoice" layoutX="336.0" layoutY="267.0" prefHeight="38.0" prefWidth="324.0" style="-fx-background-color: white; -fx-background-radius: 50px;" />
+            <Button layoutX="396.0" layoutY="375.0" mnemonicParsing="false" onAction="#onSelectExam" prefHeight="38.0" prefWidth="203.0" style="-fx-background-color: #2b63d4; -fx-background-radius: 50px;" text="Select" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <ImageView fitHeight="322.0" fitWidth="315.0" layoutX="14.0" layoutY="167.0" pickOnBounds="true">
+               <image>
+                  <Image url="@exam_questions.jpg" />
+               </image></ImageView>
+            <Label layoutX="263.0" layoutY="66.0" text="Pick Your Exam" textFill="#2b63d4">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorPickExam" layoutX="354.0" layoutY="314.0" prefHeight="28.0" prefWidth="288.0" textFill="#b71111">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineexamwithgui.Controllers.PerformanceStudentController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="700.0" pickOnBounds="true">
+         <image>
+            <Image url="@background1.jpg" />
+         </image></ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="274.0" layoutY="59.0" text="Performance " textFill="#2b63d4">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <ImageView fitHeight="225.0" fitWidth="355.0" layoutX="345.0" layoutY="186.0" pickOnBounds="true">
+               <image>
+                  <Image url="@performance.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="22.0" layoutY="139.0" text="Here You Can Show Performance For Any Student!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="251.0" text="Please Enter Student's ID" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="studentIDController" layoutX="38.0" layoutY="298.0" prefHeight="35.0" prefWidth="235.0" promptText="Enter ID" style="-fx-background-color: white; -fx-background-radius: 50px;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></TextField>
+            <Button layoutX="426.0" layoutY="545.0" mnemonicParsing="false" onAction="#onShowPerformance" prefHeight="37.0" prefWidth="254.0" style="-fx-background-color: #2b63d4; -fx-background-radius: 50px;" text="Next" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="28.0" layoutY="545.0" mnemonicParsing="false" onAction="#onAdminOptions" prefHeight="37.0" prefWidth="254.0" style="-fx-background-color: #3f7af5; -fx-background-radius: 50px;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorPerformanceStudent" alignment="CENTER" layoutX="38.0" layoutY="367.0" prefHeight="25.0" prefWidth="254.0" textFill="#b71111">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

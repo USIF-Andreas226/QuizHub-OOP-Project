@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineexamwithgui.Controllers.StudentOptionsController">
+    <children>
+        <ImageView fitHeight="700.0" fitWidth="700.0" pickOnBounds="true">
+         <image>
+            <Image url="@background1.jpg" />
+         </image></ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="helloMessage" layoutX="36.0" layoutY="71.0" prefHeight="39.0" prefWidth="340.0" text="Hello! Student ... " textFill="#2b63d4">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="165.0" text="Here You Can Choose Any Option You want!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="240.0" fitWidth="390.0" layoutX="302.0" layoutY="201.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Student_icon.png" />
+               </image></ImageView>
+            <Button layoutX="75.0" layoutY="587.0" mnemonicParsing="false" onAction="#onLogout" prefHeight="26.0" prefWidth="219.0" style="-fx-background-color: #3f7af5; -fx-background-radius: 50px;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="47.0" layoutY="236.0" text="Options" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="386.0" layoutY="587.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #2b63d4; -fx-background-radius: 50px;" text="Next" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="pick" layoutX="47.0" layoutY="306.0" mnemonicParsing="false" text="Pick An Exam" textFill="#3f7af5">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="StudentOption" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="performance" layoutX="47.0" layoutY="380.0" mnemonicParsing="false" text="Show Your Performance" textFill="#3f7af5" toggleGroup="$StudentOption">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></RadioButton>
+            <Label fx:id="errorStudentOption" alignment="CENTER" layoutX="47.0" layoutY="441.0" prefHeight="30.0" prefWidth="265.0" textFill="#b71111">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</StackPane>

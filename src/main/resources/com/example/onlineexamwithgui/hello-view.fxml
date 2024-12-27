@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineexamwithgui.Controllers.HelloController">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="700.0" opacity="0.9" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@background1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="900.0" prefWidth="700.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="200.0" layoutY="62.0" text="Welcome To Online Exam" textFill="#3f7af5">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="273.0" fitWidth="473.0" layoutX="114.0" layoutY="206.0" pickOnBounds="true">
+               <image>
+                  <Image url="@welcomed_background_exam.png" />
+               </image>
+            </ImageView>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="40.0" layoutX="91.0" layoutY="595.0" prefHeight="132.0" prefWidth="519.0" rowValignment="TOP">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#onLogin" prefHeight="33.0" prefWidth="221.0" style="-fx-background-radius: 50px; -fx-background-color: #3f7af5;" text="login" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#onSignUp" prefHeight="34.0" prefWidth="214.0" style="-fx-background-color: #3f7af5; -fx-background-radius: 50;" text="sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </FlowPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

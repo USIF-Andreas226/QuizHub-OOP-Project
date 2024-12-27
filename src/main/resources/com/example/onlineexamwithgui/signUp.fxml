@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineexamwithgui.Controllers.SignUpController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="700.0">
+         <image>
+            <Image url="@background1.jpg" />
+         </image></ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="179.0" layoutY="61.0" text="We Are Glad You Join Us!" textFill="#2b63d4">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Label>
+            <ImageView fitHeight="273.0" fitWidth="325.0" layoutX="350.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@login_signUp.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="46.0" layoutY="201.0" text="Name" textFill="#2b63d4">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameController" layoutX="48.0" layoutY="239.0" prefHeight="38.0" prefWidth="234.0" promptText="Enter Your Name" style="-fx-background-radius: 50px;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="46.0" layoutY="304.0" text="Email" textFill="#2b63d4">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="412.0" text="Password" textFill="#2b63d4">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailController" layoutX="48.0" layoutY="350.0" prefHeight="38.0" prefWidth="234.0" promptText="Enter Your Email" style="-fx-background-radius: 50px;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <AnchorPane layoutX="48.0" layoutY="460.0">
+               <children>
+                  <PasswordField fx:id="passwordController" onAction="#onSignUp" prefHeight="38.0" prefWidth="234.0" promptText="Enter Your Password" style="-fx-background-color: white; -fx-background-radius: 50px;">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <TextField fx:id="passwordVisibleController" prefHeight="38.0" prefWidth="234.0" promptText="Enter Your Password" style="-fx-background-color: white; -fx-background-radius: 50px;">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <Button layoutX="197.0" layoutY="543.0" mnemonicParsing="false" onAction="#onSignUp" prefHeight="38.0" prefWidth="324.0" style="-fx-background-color: #2b63d4; -fx-background-radius: 50px;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <FlowPane hgap="10.0" layoutX="209.0" layoutY="608.0">
+               <children>
+                  <Label text="Already Have An Account?" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" onMouseClicked="#onLogin" style="-fx-underline: true;" text="Sign In" textAlignment="CENTER" textFill="#2b63d4">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </FlowPane>
+            <CheckBox fx:id="showPassword" layoutX="48.0" layoutY="508.0" mnemonicParsing="false" onAction="#showPassword" prefHeight="27.0" prefWidth="214.0" text="Show Password" textFill="#2b63d4">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

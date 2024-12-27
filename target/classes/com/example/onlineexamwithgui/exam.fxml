@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineexamwithgui.Controllers.ExamController">
+    <ImageView fitHeight="700.0" fitWidth="700.0" pickOnBounds="true">
+        <Image url="@background1.jpg" />
+    </ImageView>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+        <children>
+            <Label fx:id="questionTitle" alignment="TOP_LEFT" layoutX="30.0" layoutY="177.0" prefHeight="85.0" prefWidth="423.0" text="Question Number # .." textFill="#2b63d4">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Label>
+            <Button fx:id="nextButton" layoutX="427.0" layoutY="576.0" mnemonicParsing="false" onAction="#onNextQuestion" prefHeight="40.0" prefWidth="185.0" style="-fx-background-color: #2b63d4; -fx-background-radius: 50px;" text="Next" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="previousButton" layoutX="88.0" layoutY="576.0" mnemonicParsing="false" onAction="#onPreviousQuestion" prefHeight="27.0" prefWidth="186.0" style="-fx-background-color: #3f7af5; -fx-background-radius: 50px;" text="Previous" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Button>
+            <Label fx:id="marks" layoutX="48.0" layoutY="480.0" prefHeight="27.0" prefWidth="104.0" text=" Marks:" textFill="#2b63d4">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Label>
+            <RadioButton fx:id="option1" layoutX="58.0" layoutY="278.0" mnemonicParsing="false" textFill="#2b63d4">
+            <toggleGroup>
+               <ToggleGroup fx:id="options" />
+            </toggleGroup>
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+            </RadioButton>
+            <RadioButton fx:id="option2" layoutX="313.0" layoutY="278.0" mnemonicParsing="false" textFill="#2b63d4" toggleGroup="$options">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font></RadioButton>
+            <RadioButton fx:id="option3" layoutX="58.0" layoutY="390.0" mnemonicParsing="false" textFill="#2b63d4" toggleGroup="$options">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font></RadioButton>
+            <RadioButton fx:id="option4" layoutX="313.0" layoutY="390.0" mnemonicParsing="false" textFill="#2b63d4" toggleGroup="$options">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font></RadioButton>
+         <Label fx:id="examTitle" layoutX="289.0" layoutY="53.0" text="Exam Title " textFill="#2b63d4">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+         </Label>
+         <Label fx:id="timer" layoutX="475.0" layoutY="177.0" prefHeight="30.0" prefWidth="186.0" text="Timer:" textFill="#2b63d4">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+            <Label fx:id="errorExam" alignment="CENTER" layoutX="188.0" layoutY="520.0" prefHeight="39.0" prefWidth="351.0" textFill="#b71111">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Label>
+        </children>
+    </AnchorPane>
+</StackPane>

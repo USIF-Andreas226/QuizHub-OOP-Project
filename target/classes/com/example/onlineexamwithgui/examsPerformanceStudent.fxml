@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineexamwithgui.Controllers.ExamsPerformanceStudentController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="700.0" pickOnBounds="true">
+         <image>
+            <Image url="@background1.jpg" />
+         </image></ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" layoutX="275.0" layoutY="50.0" text=" Performance" textFill="#2b63d4">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="248.0" fitWidth="325.0" layoutX="376.0" layoutY="143.0" pickOnBounds="true">
+               <image>
+                  <Image url="@performance.png" />
+               </image></ImageView>
+            <FlowPane hgap="10.0" layoutX="32.0" layoutY="508.0" prefHeight="27.0" prefWidth="261.0">
+               <children>
+                  <Label text="Total Scores Are:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="score" text="Scores" textFill="#2b63d4">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </FlowPane>
+            <Button layoutX="245.0" layoutY="587.0" mnemonicParsing="false" onAction="#onStudentOptions" prefHeight="35.0" prefWidth="229.0" style="-fx-background-color: #3f7af5; -fx-background-radius: 50px;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <FlowPane layoutX="400.0" layoutY="506.0" prefHeight="32.0" prefWidth="242.0">
+               <children>
+                  <Label prefHeight="36.0" prefWidth="87.0" text=" Grade:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="grade" text="Grade" textFill="#2b63d4">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </FlowPane>
+            <TableView fx:id="resultsTable" layoutX="7.0" layoutY="143.0" prefHeight="283.0" prefWidth="358.0" style="-fx-background-color: linear-gradient(#101010 0%, #3f7af5 60%)">
+               <placeholder>
+                  <Label text="You haven't taken exams yet" textFill="#FFFFFF">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </placeholder>
+               <columns>
+                  <TableColumn fx:id="examTitle" prefWidth="123.99998474121094" text="Exam" />
+                  <TableColumn fx:id="examCategory" prefWidth="91.20001220703125" text="Category" />
+                  <TableColumn fx:id="examScore" minWidth="0.399993896484375" prefWidth="69.60000610351562" text="Score" />
+                  <TableColumn fx:id="examGrade" minWidth="8.20001220703125" prefWidth="70.39999389648438" text="Grade" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
